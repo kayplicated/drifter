@@ -71,15 +71,19 @@ which makes reaching up expensive, makes curling down nearly
 free — a finger that's already pre-extended forward barely moves
 when it curls.
 
-**Dense local rollability.** The right-hand bottom cluster
-`k f u o y` is packed with rollable pairs in multiple
-directions: `of`/`fo`, `ou`/`uo`, `ko`/`ok`, `you`/`uoy`,
-`oy`/`yo`, `ku`/`uk`. Common bigrams roll cleanly both inward
-and outward through the same zone. The hand never leaves the
-region to type most common words; it *drifts* through different
-adjacent-finger pairings within the cluster. That feeling is
-what I chased across iterations — and what the layout is named
-for.
+**The drift.** Both bottom rows work together as a single
+rollable surface. The right-hand cluster `k f u o y` rolls
+cleanly inward and outward through common bigrams — `of`/`fo`,
+`ou`/`uo`, `ko`/`ok`, `you`/`uoy`, `oy`/`yo`, `ku`/`uk`. The
+left-hand cluster `b l d c w` does the same on its side —
+`dl`/`ld`, `bl`/`lb`, `wl`, the whole `d c w` triangle. And
+words that span both halves (`would`, `words`, `world`,
+`could`) *extend* the drift across the keyboard: left bottom
+roll → cross-hand alternation → right bottom roll, with the
+hands passing the motion between them rather than each side
+working in isolation. That's where the name comes from — the
+fingers drift along the same horizontal band instead of
+bouncing across rows.
 
 **All frequent punctuation on the right thumb cluster** (`; ' , .`).
 The Elora's 7-key thumb cluster makes thumb-reach cheap enough

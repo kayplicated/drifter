@@ -36,6 +36,14 @@ cluster; **space and enter live on the left thumb**, so word
 boundaries and line breaks don't interrupt the right-hand
 typing rhythm.
 
+The layout data lives in two files: `drifter.json` maps
+characters to abstract key ids (`main_k1` through `main_k30`
+for the alpha grid, `left_thumb_k5`/`k6` and
+`right_thumb_k3..k6` for the thumb clusters), and
+`halcyon_elora.json` maps those ids to the physical positions
+of the Halcyon Elora v2's keys. Together they describe the full
+layout; either one alone is incomplete.
+
 ## Why it exists
 
 Most alt layouts (graphite, gallium, sturdy, ...) are designed

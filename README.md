@@ -1,11 +1,23 @@
 # drifter
 
-A flexion-biased col-stag keyboard layout. Designed on a Halcyon
-Elora v2, drilled through seven iterations, built around two
-biomechanical observations: **row direction is asymmetric on
-aggressively-staggered col-stag hardware**, and **hand-territory
-synchrony — whether both hands reach the same rows during
-alternation — is a felt axis that generic scorers don't name.**
+A flexion-biased keyboard layout for **heavily-staggered column-
+staggered split boards** — Halcyon Elora, Kyria, and similar.
+Drilled through seven iterations on a Halcyon Elora v2, built
+around two biomechanical observations: **row direction is
+asymmetric on aggressively-staggered col-stag hardware**, and
+**hand-territory synchrony — whether both hands reach the same
+rows during alternation — is a felt axis that generic scorers
+don't name.**
+
+drifter is not a general-purpose layout. It leans hard on
+col-stag geometry: middle-column forward-thrust, pinky pull-back,
+and a multi-key thumb cluster. On ANSI, flat ortho, or gentle
+row-stag hardware the geometry isn't there to reward, and the
+design wins disappear. **If your board isn't a heavily-staggered
+col-stag split, drifter isn't the right layout for you** — try
+Gallium, Canary, Graphite, or Colemak-DH instead, all of which
+were designed against cost models that actually match your
+hardware.
 
 ```
 alpha grid:
@@ -107,45 +119,45 @@ the most-sustainable finger.
 | v7      | `j`/`x`/`z` top-row rearrangement, `, ; .` → thumb | Empty alpha slots + thumb-bound punctuation unlocks clean trigram flow                             |
 | v8      | Upside-down test (rows swapped)              | Structure survives inversion, but flexion is a real independent benefit — both axes carry the win |
 
-## Installing
+## Using it
 
-### Via keywiz (typing practice)
+### Try it first
 
-[keywiz](https://github.com/kayplicated/keywiz) ships with
-drifter as one of its built-in layouts:
+If you're considering drifter but haven't committed to the
+col-stag hardware yet, [keywiz](https://github.com/kayplicated/keywiz)
+ships with drifter as one of its built-in layouts and has a
+"practice drifter while still typing on QWERTY" mode:
 
 ```sh
 cargo install --git https://github.com/kayplicated/keywiz
-keywiz -l drifter
-```
-
-If you're coming from QWERTY and want to practice drifter while
-still typing on a QWERTY-mapped keyboard:
-
-```sh
 keywiz -l drifter --from qwerty
 ```
 
-### Via firmware
+That's the honest preview — you get to feel the alpha grid on
+whatever keyboard you already have. The thumb cluster's
+punctuation won't map cleanly to ANSI, but the 85% of typing
+that happens on the alpha grid will. If the shape feels right
+there, it'll feel much better on a real col-stag board.
 
-drifter.json is a data-only description — to actually type on it
-you need firmware for your board. The repo ships with format
-adapters where available:
+### Daily use
 
-- **kanata** — `kanata/drifter.kbd` in this repo is an ANSI
-  adaptation for users who want to practice drifter muscle memory
-  on a standard keyboard. It folds the thumb cluster's `; ' , .`
-  into the alpha top row's otherwise-quiet slots. See the file
-  header for the compromise details.
-- **QMK / ZMK** — not in the repo yet. Split col-stag users are
-  better off configuring drifter directly in their board's
-  firmware, since the thumb cluster is the point and a kanata-on-
-  ANSI config can't preserve it.
+Configure drifter in your board's firmware (QMK, ZMK, or
+whatever your keyboard speaks). The alpha grid and thumb cluster
+positions transfer directly; firmware-specific macros, combos,
+and layer holds are your own design.
 
-### Via scoring (drift)
+This repo intentionally doesn't ship firmware configs. Every
+col-stag board has its own firmware syntax, and every typist has
+their own combos, gaming layer, OS modifiers, home-row mods —
+a canned config would embed assumptions that don't fit you.
+Configuring drifter into your existing setup by hand is the only
+way the firmware ends up matching how you type.
+
+### Scoring
 
 drifter's companion scorer [drift](https://github.com/kayplicated/keywiz/tree/master/drift)
-accepts this format natively:
+accepts this format natively if you want to see the analyzer
+breakdown:
 
 ```sh
 drift score drifter.json
@@ -155,12 +167,10 @@ drift score drifter.json
 
 ```
 drifter/
-├── README.md              — you are here
-├── drifter.json           — the layout (keywiz JSON5 format)
-├── kanata/
-│   └── drifter.kbd        — ANSI-adapted kanata config
+├── README.md           — you are here
+├── drifter.json        — the layout (keywiz JSON5 format)
 └── docs/
-    └── process.md         — iteration log from the v5 era
+    └── process.md      — iteration log from the v5 era
 ```
 
 ## License

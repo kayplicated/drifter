@@ -97,15 +97,22 @@ fingers drift along the same horizontal band instead of
 bouncing across rows.
 
 The left bottom row is the exact flip of gallium's left top
-row, with one deliberate change: `v↔w`. Gallium puts `v` on the
-LII (left-inner-index) column, which in drifter's flipped form
-would sit on the bottom — but `w` is the more common letter and
-the one that appears in `w`-initial words that chain into the
-right-hand drift (`would`, `words`, `work`, `with`, `we`).
-Placing `w` on LII-bottom instead of in the top-row dead zone
-keeps those words inside the same horizontal band the right
-hand is rolling through, so the cross-hand drift survives the
-`w`. `v` takes the quieter top-row slot it was displaced into.
+row, with one deliberate change: `v↔w`. The logic is about
+which letter pairs with which *hand-territory*:
+
+- `w` pairs most often with right-hand bottom-row letters
+  (`wou`, `wor`, `wo*`). If `w` sat in the top-row dead zone,
+  those bigrams would be a two-row diagonal split — top-left
+  reaching while the right hand is curling to the bottom.
+- `v` pairs most often with right-hand *home-row* letters
+  (`ve`, `vi`, `va` — `have`, `I've`, `give`). That's only a
+  one-row vertical split regardless of which row `v` sits on.
+
+Swapping them puts `w` on the bottom row (zero vertical split
+for `wou`/`wor` — both hands on bottom) while leaving the
+`v` pairings on the same one-row offset they had before. The
+worst split goes away; the acceptable one doesn't get any
+worse. Net reduction in hand-territory asymmetry, no cost.
 
 **Thumbs carry the most-used keys.** On col-stag boards with a
 multi-key thumb cluster, the thumbs are the strongest and

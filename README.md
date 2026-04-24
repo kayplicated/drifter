@@ -96,6 +96,17 @@ working in isolation. That's where the name comes from — the
 fingers drift along the same horizontal band instead of
 bouncing across rows.
 
+The left bottom row is the exact flip of gallium's left top
+row, with one deliberate change: `v↔w`. Gallium puts `v` on the
+LII (left-inner-index) column, which in drifter's flipped form
+would sit on the bottom — but `w` is the more common letter and
+the one that appears in `w`-initial words that chain into the
+right-hand drift (`would`, `words`, `work`, `with`, `we`).
+Placing `w` on LII-bottom instead of in the top-row dead zone
+keeps those words inside the same horizontal band the right
+hand is rolling through, so the cross-hand drift survives the
+`w`. `v` takes the quieter top-row slot it was displaced into.
+
 **Thumbs carry the most-used keys.** On col-stag boards with a
 multi-key thumb cluster, the thumbs are the strongest and
 fastest fingers on the hand — wasting them on a single `space`
@@ -143,8 +154,9 @@ A side effect is that `e` moves from ring to middle finger.
 - **`sc` SFB on left-index.** Unavoidable given the home row;
   every relocation of `c` created worse SFBs somewhere else.
 - **Left hand's common consonants on the bottom row**, rare
-  letters on top. (Exact letter placement shifted across
-  iterations — `v↔w` settled in the current form.)
+  letters on top. `w` was pulled out of the top-row dead zone
+  into LII-bottom (swapping with `v`) so `w`-initial words stay
+  inside the drift band — see the "The drift" thesis above.
 - **Right hand's common letters on home + bottom, never top.**
 
 ## How it evolved

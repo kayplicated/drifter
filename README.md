@@ -121,13 +121,7 @@ home row would pair `au`/`ua` vertically (less common) and
 scatter `ou`/`uo` across columns. Swapping `a↔e` restores the
 alignment in the new arrangement — `e` above `u`, `a` above `o`.
 
-The side effect is that `e`, English's most-frequent letter,
-now sits on the middle finger instead of the ring. That matches
-piano-informed finger hierarchy (middle and ring are the power
-fingers for sustained work; "index is the strongest finger" is
-qwerty-era myth), but the swap was motivated by keeping vowel-
-pair column alignment through the row flip, not by the finger-
-strength claim — the strength fit is a bonus, not the cause.
+A side effect is that `e` moves from ring to middle finger.
 
 ## What survived every iteration
 

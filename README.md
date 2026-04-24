@@ -25,13 +25,16 @@ alpha grid:
   n r t s g    p h e a i
   b l d c w    k f u o y
 
-right thumb cluster (k3..k6):
-                    ;  '  ,  .
+left thumb  (k5, k6): enter, space
+right thumb (k3..k6): ;  '  ,  .
 ```
 
 The top row is low-traffic: rare letters (`q v m j x z`) plus
 the ANSI-outer punctuation (`[ ] - =`) that doesn't fit
-elsewhere. All frequent punctuation lives on the thumb cluster.
+elsewhere. All frequent punctuation lives on the right thumb
+cluster; **space and enter live on the left thumb**, so word
+boundaries and line breaks don't interrupt the right-hand
+typing rhythm.
 
 ## Why it exists
 
@@ -85,14 +88,28 @@ working in isolation. That's where the name comes from — the
 fingers drift along the same horizontal band instead of
 bouncing across rows.
 
-**All frequent punctuation on the right thumb cluster** (`; ' , .`).
-The Elora's 7-key thumb cluster makes thumb-reach cheap enough
-that even mid-word characters like `'` work well there —
-contractions (`don't`, `it's`, `they're`) flow through the thumb
-without interrupting alpha rhythm, and freeing `'` off the alpha
-grid shortens the common `i'` reach from pinky-to-index-outer-top
-to pinky-to-thumb. `; , .` never appear mid-word in prose anyway,
-so their thumb placement is free.
+**Thumbs carry the most-used keys.** On col-stag boards with a
+multi-key thumb cluster, the thumbs are the strongest and
+fastest fingers on the hand — wasting them on a single `space`
+key (the ANSI default) is a design loss. drifter uses both:
+
+- **Left thumb: `space` and `enter`.** Word boundaries and line
+  breaks don't interrupt the right-hand typing rhythm.
+- **Right thumb: `; ' , .`** — all frequent punctuation. The
+  Elora's thumb cluster makes thumb-reach cheap enough that
+  even mid-word characters like `'` work well there —
+  contractions (`don't`, `it's`, `they're`) flow through the
+  thumb without interrupting alpha rhythm, and freeing `'` off
+  the alpha grid shortens the common `i'` reach from pinky-to-
+  index-outer-top to pinky-to-thumb. `; , .` don't appear
+  mid-word in prose anyway, so their thumb placement is free.
+
+Both the left-thumb space/enter and the right-thumb punctuation
+are prescribed by `drifter.json`. On col-stag boards with fewer
+thumb keys than the Elora's seven-per-hand (Kyria, Corne,
+Ferris), you'll need to drop some bindings or map them to
+combos; the alpha grid is what's essential, the thumb layout is
+the preferred arrangement when the hardware allows it.
 
 **`e` on the middle finger.** Piano-informed finger hierarchy
 beats typing-community dogma. "Index is the strongest finger" is

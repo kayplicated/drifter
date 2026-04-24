@@ -154,59 +154,14 @@ strength claim — the strength fit is a bonus, not the cause.
 | v6      | Right-hand `a↔e` home-row swap               | Forced by the row flip: `ou`/`uo` wants vowels aligned with their bottom-row partners              |
 | v7      | `j`/`x`/`z` top-row rearrangement, `, ; .` → thumb | Empty alpha slots + thumb-bound punctuation unlocks clean trigram flow                             |
 
-## Using it
+## Related
 
-### Try it first
-
-If you're considering drifter but haven't committed to the
-col-stag hardware yet, [keywiz](https://github.com/kayplicated/keywiz)
-ships with drifter as one of its built-in layouts and has a
-"practice drifter while still typing on QWERTY" mode:
-
-```sh
-cargo install --git https://github.com/kayplicated/keywiz
-keywiz -l drifter --from qwerty
-```
-
-That's the honest preview — you get to feel the alpha grid on
-whatever keyboard you already have. The thumb cluster's
-punctuation won't map cleanly to ANSI, but the 85% of typing
-that happens on the alpha grid will. If the shape feels right
-there, it'll feel much better on a real col-stag board.
-
-### Daily use
-
-Configure drifter in your board's firmware (QMK, ZMK, or
-whatever your keyboard speaks). The alpha grid and thumb cluster
-positions transfer directly; firmware-specific macros, combos,
-and layer holds are your own design.
-
-This repo intentionally doesn't ship firmware configs. Every
-col-stag board has its own firmware syntax, and every typist has
-their own combos, gaming layer, OS modifiers, home-row mods —
-a canned config would embed assumptions that don't fit you.
-Configuring drifter into your existing setup by hand is the only
-way the firmware ends up matching how you type.
-
-### Scoring
-
-drifter's companion scorer [drift](https://github.com/kayplicated/keywiz/tree/master/drift)
-accepts this format natively if you want to see the analyzer
-breakdown:
-
-```sh
-drift score drifter.json
-```
-
-## Files
-
-```
-drifter/
-├── README.md           — you are here
-├── drifter.json        — the layout (keywiz JSON5 format)
-└── docs/
-    └── process.md      — iteration log from the v5 era
-```
+- [keywiz](https://github.com/kayplicated/keywiz) — the typing
+  trainer drifter was drilled on. Ships with drifter as one of
+  its built-in layouts.
+- [drift](https://github.com/kayplicated/keywiz/tree/master/drift)
+  — the scorer built alongside drifter, which reads `drifter.json`
+  natively.
 
 ## License
 

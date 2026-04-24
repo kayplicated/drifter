@@ -76,10 +76,10 @@ when it curls.
 directions: `of`/`fo`, `ou`/`uo`, `ko`/`ok`, `you`/`uoy`,
 `oy`/`yo`, `ku`/`uk`. Common bigrams roll cleanly both inward
 and outward through the same zone. The hand never leaves the
-region to type most common words; it *circulates* through
-different adjacent-finger pairings within the cluster. The
-feeling I chased across iterations — and named the layout for —
-is drifting over the keys.
+region to type most common words; it *drifts* through different
+adjacent-finger pairings within the cluster. That feeling is
+what I chased across iterations — and what the layout is named
+for.
 
 **All frequent punctuation on the right thumb cluster** (`; ' , .`).
 The Elora's 7-key thumb cluster makes thumb-reach cheap enough

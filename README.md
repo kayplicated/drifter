@@ -111,18 +111,33 @@ Ferris), you'll need to drop some bindings or map them to
 combos; the alpha grid is what's essential, the thumb layout is
 the preferred arrangement when the hardware allows it.
 
-**`e` on the middle finger.** Piano-informed finger hierarchy
-beats typing-community dogma. "Index is the strongest finger" is
-a typing myth from the qwerty era; middle and ring are the power
-fingers for sustained work. The most-frequent letter belongs on
-the most-sustainable finger.
+**Right-hand home-row `a↔e` swap.** Gallium's right hand has
+`y o u ,` on top and `h a e i` on home — `u` sits above `a` and
+`o` above `e`, so common vowel bigrams like `ou`/`uo` land on
+vertically-adjacent keys. drifter inverts the top row to the
+bottom as `, u o y`, which breaks that alignment: `u` is now
+below where `a` used to be, `o` below `e`. Keeping gallium's
+home row would pair `au`/`ua` vertically (less common) and
+scatter `ou`/`uo` across columns. Swapping `a↔e` restores the
+alignment in the new arrangement — `e` above `u`, `a` above `o`.
+
+The side effect is that `e`, English's most-frequent letter,
+now sits on the middle finger instead of the ring. That matches
+piano-informed finger hierarchy (middle and ring are the power
+fingers for sustained work; "index is the strongest finger" is
+qwerty-era myth), but the swap was motivated by keeping vowel-
+pair column alignment through the row flip, not by the finger-
+strength claim — the strength fit is a bonus, not the cause.
 
 ## What survived every iteration
 
-- **`nrtsg / phaei` home row**, inherited from gallium. Every
-  attempt to change it broke more than it fixed — the bigram
-  structure of English pins these letters to those finger
-  positions.
+- **Gallium's home-row finger assignments**, with the right-hand
+  `a↔e` swap. The left hand (`nrtsg`) is unchanged from gallium;
+  the right hand becomes `pheai` instead of `phaei` to keep
+  vowel pairs vertically aligned through the top/bottom row
+  flip. Every attempt to move letters *off* their assigned
+  fingers broke more than it fixed — the bigram structure of
+  English pins these letters to those fingers.
 - **`sc` SFB on left-index.** Unavoidable given the home row;
   every relocation of `c` created worse SFBs somewhere else.
 - **Left hand's common consonants on the bottom row**, rare
@@ -136,7 +151,7 @@ the most-sustainable finger.
 |---------|----------------------------------------------|----------------------------------------------------------------------------------------------------|
 | v1–v4   | Early row-flip experiments off gallium       | Flipping rows works; specific letter placements need tuning                                        |
 | v5      | Stabilized the flipped structure             | `y` on pinky-bot is the wrong position; `sc` SFB is structural                                     |
-| v6      | `a↔e` swap (e on middle finger)              | Middle is the power finger; `e` belongs there                                                      |
+| v6      | Right-hand `a↔e` home-row swap               | Forced by the row flip: `ou`/`uo` wants vowels aligned with their bottom-row partners              |
 | v7      | `j`/`x`/`z` top-row rearrangement, `, ; .` → thumb | Empty alpha slots + thumb-bound punctuation unlocks clean trigram flow                             |
 | v8      | Upside-down test (rows swapped)              | Structure survives inversion, but flexion is a real independent benefit — both axes carry the win |
 

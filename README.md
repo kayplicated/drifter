@@ -178,11 +178,13 @@ A side effect is that `e` moves from ring to middle finger.
 ## Related
 
 - [keywiz](https://github.com/kayplicated/keywiz) — the typing
-  trainer drifter was drilled on. Ships with drifter as one of
-  its built-in layouts.
+  trainer drifter was drilled on. Both `drifter.json` and
+  `halcyon_elora.json` in this repo originate from keywiz's
+  `layouts/` and `keyboards/` directories; that's the upstream
+  for the file format and the canonical ids.
 - [drift](https://github.com/kayplicated/keywiz/tree/master/drift)
-  — the scorer built alongside drifter, which reads `drifter.json`
-  natively.
+  — the scorer built alongside drifter, which reads the json
+  files in this repo natively.
 
 ## License
 

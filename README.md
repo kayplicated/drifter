@@ -153,7 +153,6 @@ strength claim — the strength fit is a bonus, not the cause.
 | v5      | Stabilized the flipped structure             | `y` on pinky-bot is the wrong position; `sc` SFB is structural                                     |
 | v6      | Right-hand `a↔e` home-row swap               | Forced by the row flip: `ou`/`uo` wants vowels aligned with their bottom-row partners              |
 | v7      | `j`/`x`/`z` top-row rearrangement, `, ; .` → thumb | Empty alpha slots + thumb-bound punctuation unlocks clean trigram flow                             |
-| v8      | Upside-down test (rows swapped)              | Structure survives inversion, but flexion is a real independent benefit — both axes carry the win |
 
 ## Using it
 

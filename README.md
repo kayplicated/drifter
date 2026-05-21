@@ -21,7 +21,7 @@ hardware.
 
 ```
 alpha grid:
-  q v m j [    ] - = x z
+  q v m j [    ] = - x z
   n r t s g    p h e a i
   b l d c w    k f u o y
 

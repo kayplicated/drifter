@@ -96,6 +96,18 @@ working in isolation. That's where the name comes from — the
 fingers drift along the same horizontal band instead of
 bouncing across rows.
 
+`y` on the right-pinky edge is part of the same story. `y` is
+overwhelmingly a hand-entry or hand-exit letter — word-initial
+(`you`, `your`, `year`) or word-final (`-ay`, `-ey`, `-oy`,
+`-ly`, `-ty`). On the pinky edge, both directions flow with
+the hand's natural motion: word-initial `y` rolls *inward*
+along the bottom (`you` = pinky → ring → middle, a clean
+bottom-row roll), and word-final `y` rolls *outward* into the
+left thumb's space (`-oy` = ring → pinky → space, exiting the
+hand). Putting `y` anywhere else on the right hand would break
+one direction or the other; on the pinky edge, both directions
+are the layout's preferred motion.
+
 The left bottom row is the exact flip of gallium's left top
 row, with one deliberate change: `v↔w`. The logic is about
 which letter pairs with which *hand-territory*:
@@ -137,27 +149,39 @@ Ferris), you'll need to drop some bindings or map them to
 combos; the alpha grid is what's essential, the thumb layout is
 the preferred arrangement when the hardware allows it.
 
-**Right-hand home-row `a↔e` swap.** Gallium's right hand has
-`y o u ,` on top and `h a e i` on home — `u` sits above `a` and
-`o` above `e`, so common vowel bigrams like `ou`/`uo` land on
-vertically-adjacent keys. drifter inverts the top row to the
-bottom as `, u o y`, which breaks that alignment: `u` is now
-below where `a` used to be, `o` below `e`. Keeping gallium's
-home row would pair `au`/`ua` vertically (less common) and
-scatter `ou`/`uo` across columns. Swapping `a↔e` restores the
-alignment in the new arrangement — `e` above `u`, `a` above `o`.
+**Right-hand home-row `a↔e` swap.** Gallium's right home row is
+`h a e i`; drifter's is `h e a i`. The real argument isn't
+"vertical vowel alignment" — on a col-stag board, vertical
+alignment means *same-finger*, which makes the aligned vowel
+pairs SFBs rather than rolls. The actual load-bearing reasoning
+is finger strength: **RMiddle is the strongest right-hand finger
+(forward-thrust, pre-extended) and `e` is the most-frequent
+right-hand letter (~11.9%).** Putting `e` on RMiddle is the
+single highest-leverage placement on the right hand. Everything
+else falls out from that constraint.
 
-A side effect is that `e` moves from ring to middle finger.
+Once `e` is on RMiddle, `a` has to go somewhere. RPinky is too
+weak; RIndex would create comparable SFBs (`ho` 0.30% if `a↔h`,
+`op` 0.27% if `a↔p`); RRing is the residual. The cost: RRing
+ends up carrying `a + o` together (~14.5% of typing) on the
+right hand's weakest finger, and `a` as a standalone word (the
+article) means ~2% of `a` keystrokes are isolated ring-finger
+bonks between thumbs, with no roll or co-articulation to soften
+them. **That felt cost is real and unavoidable** — it's the
+price paid to keep `e` on the strongest finger and the bottom
+row free for the drift cluster.
 
 ## What survived every iteration
 
 - **Gallium's home-row finger assignments**, with the right-hand
   `a↔e` swap. The left hand (`nrtsg`) is unchanged from gallium;
-  the right hand becomes `pheai` instead of `phaei` to keep
-  vowel pairs vertically aligned through the top/bottom row
-  flip. Every attempt to move letters *off* their assigned
-  fingers broke more than it fixed — the bigram structure of
-  English pins these letters to those fingers.
+  the right hand becomes `pheai` instead of `phaei` to put `e`
+  on RMiddle (strongest right-hand finger gets the most-frequent
+  right-hand letter). Every attempt to move letters *off* their
+  assigned fingers broke more than it fixed — the bigram
+  structure of English pins these letters to those fingers, and
+  every right-hand `a` swap that lightens RRing creates a worse
+  SFB elsewhere (`ho` on `a↔h`, `op` on `a↔p`).
 - **`sc` SFB on left-index.** Unavoidable given the home row;
   every relocation of `c` created worse SFBs somewhere else.
 - **Left hand's common consonants on the bottom row**, rare
@@ -171,8 +195,8 @@ A side effect is that `e` moves from ring to middle finger.
 | Version | What changed                                 | What it taught                                                                                     |
 |---------|----------------------------------------------|----------------------------------------------------------------------------------------------------|
 | v1–v4   | Early row-flip experiments off gallium       | Flipping rows works; specific letter placements need tuning                                        |
-| v5      | Stabilized the flipped structure             | `y` on pinky-bot is the wrong position; `sc` SFB is structural                                     |
-| v6      | Right-hand `a↔e` home-row swap               | Forced by the row flip: `ou`/`uo` wants vowels aligned with their bottom-row partners              |
+| v5      | Stabilized the flipped structure             | `sc` SFB is structural; `y` belongs on the pinky edge — word-initial `you`/`your` roll inward, word-final `-ay`/`-ey`/`-oy` roll outward to space |
+| v6      | Right-hand `a↔e` home-row swap               | Strongest right-hand finger (RMiddle) should carry the most-frequent right-hand letter (`e`); RRing absorbs the residual `a` load |
 | v7      | `j`/`x`/`z` top-row rearrangement, `, ; .` → thumb | Empty alpha slots + thumb-bound punctuation unlocks clean trigram flow                             |
 
 ## Related

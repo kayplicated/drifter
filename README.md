@@ -29,7 +29,8 @@ left thumb  (k5, k6): enter, space
 right thumb (k3..k6): ;  '  ,  .
 ```
 
-The top row is low-traffic: rare letters (`q v m j x z`) plus
+The top row is low-traffic: rare letters (`q v j x z`), `m` on the
+middle finger where forward thrust makes the reach cheapest, and
 the ANSI-outer punctuation (`[ ] - =`) that doesn't fit
 elsewhere. All frequent punctuation lives on the right thumb
 cluster; **space and enter live on the left thumb**, so word
@@ -52,7 +53,7 @@ costly. That assumption holds for flat ortho boards; on a
 col-stag board with aggressive pinky pull-back and middle-finger
 forward-thrust, the top row is meaningfully harder to reach than
 the bottom. drifter is a layout designed around that asymmetry
-instead of against it: **only rare letters on the top row**
+instead of against it: **only low-traffic letters on the top row**
 (`q v m j x z`), both hands' common letters clustered in home +
 bottom, and all frequent punctuation on the thumb cluster where
 it doesn't interrupt alpha flow.
@@ -88,7 +89,7 @@ cleanly inward and outward through common bigrams — `of`/`fo`,
 `ou`/`uo`, `ko`/`ok`, `you`/`uoy`, `oy`/`yo`, `ku`/`uk`. The
 left-hand cluster `b l d c w` does the same on its side —
 `dl`/`ld`, `bl`/`lb`, `wl`, the whole `d c w` triangle. And
-words that span both halves (`would`, `words`, `world`,
+words that span both halves (`would`, `words`,
 `could`) *extend* the drift across the keyboard: left bottom
 roll → cross-hand alternation → right bottom roll, with the
 hands passing the motion between them rather than each side
